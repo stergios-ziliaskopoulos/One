@@ -1,22 +1,21 @@
 # Bitcoin Price Alert Bot
 
-Ένα πλήρως αυτοματοποιημένο σύστημα Backend που παρακολουθεί την αγορά κρυπτονομισμάτων σε πραγματικό χρόνο και στέλνει άμεσες ειδοποιήσεις.
+A fully automated backend system that monitors cryptocurrency markets in real-time and sends instant alerts via email.
 
-## Τι λύνει αυτό το Bot
-Οι επενδυτές χάνουν ευκαιρίες επειδή δεν μπορούν να κοιτούν την οθόνη 24/7.
-Αυτό το bot λειτουργεί ως **"Ψηφιακός Βοηθός"** που:
-1.  **Παρακολουθεί:** Τσεκάρει την τιμή του Bitcoin κάθε λεπτό (μέσω CoinGecko API).
-2.  **Αναλύει:** Συγκρίνει τιμές με βάση τη στρατηγική του χρήστη.
-3.  **Ειδοποιεί:** Στέλνει Email Alerts σε πραγματικό χρόνο (μέσω Resend).
+## 🎯 Project Overview
+This project solves the problem of constant manual market monitoring. It acts as a 24/7 digital assistant that tracks Bitcoin prices and notifies the investor immediately when specific conditions are met.
 
-## Τεχνολογίες (Tech Stack)
-* **Γλώσσα:** TypeScript / Node.js
-* **Cloud Platform:** Trigger.dev (Serverless)
-* **APIs:** CoinGecko, Resend
-* **Architecture:** Event-Driven / Cron Jobs
+## ⚙️ How It Works
+* **Real-Time Monitoring:** Fetches live data from the **CoinGecko API** every 60 seconds.
+* **Logic & Analysis:** Compares current prices against user-defined thresholds (Buy/Sell signals).
+* **Instant Alerts:** Triggers immediate email notifications using the **Resend API**.
+* **Cloud Execution:** Deployed on **Trigger.dev** as a serverless background job (no local server required).
 
-## Ασφάλεια
-Όλα τα ευαίσθητα δεδομένα (API Keys) προστατεύονται μέσω Environment Variables (.env) και δεν εκτίθενται στον κώδικα.
+## 🛠️ Tech Stack
+* **Language:** TypeScript / Node.js
+* **Framework:** Trigger.dev (Serverless)
+* **APIs:** CoinGecko (Data), Resend (Email)
+* **Security:** Environment Variables (`.env`) for API key protection
 
 ---
-*Created by Stergios Ziliaskopoulos - Automation Engineer*
+*Developed by Stergios Ziliaskopoulos - Automation Engineer*
